@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="./assets/style.css"> 
+</head>
+<body>
+    <form>
+        <div id="mapDataArea">
+            <form>
+                <input type="text" id="beginPoint" placeholder="Origin">
+                <input type="text" id="endPoint" placeholder="Destination">
+                <button class ="btn" onclick="calcRoute();" type="button">Map the distance</button>
+            </form>
+        
+            <div id="googleMap">
+
+            </div>
+
+            <div id="output">
+                <p>This is placeholder text</p>
+            </div>
+
+        </div>
+    </form>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLqOem06RPYBA7gbjRtWp-nAcFifbYHgw&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
